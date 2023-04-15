@@ -1339,3 +1339,7 @@ footer.dark, footer.dark a {
   display: block;
   text-align: center;
 }
+#gallery-image-11:checked ~ .dog-gallery__images img:nth-child(11) {
+  transform: translateY(0);
+  opacity: 1;
+}
