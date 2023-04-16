@@ -987,8 +987,10 @@ nav {
 }
 .see-more-dogs__wrapper {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .media-card {
