@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="hu" >
-<head>
-  <meta charset="UTF-8">
-  <title>Kutyáink</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700|Barriecito" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<input class="variation" id="bluepurple" type="radio" value="1" name="color" checked="checked"/>
+<html>
+  <html lang="hu" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Kezdőlap</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700|Barriecito" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'><link rel="stylesheet" href="./style.css">
+  
+  </head>
+  <body>
+    <input class="variation" id="bluepurple" type="radio" value="1" name="color" checked="checked"/>
 <label for="bluepurple"></label>
 <input class="variation" id="sunset" type="radio" value="2" name="color"/>
 <label for="sunset"></label>
@@ -35,52 +35,58 @@
         </div>
         <div class="text">KecskemetMenhely</div>
       </div>
-      <div class="navigation"><a href=index.html>Kezdőlap</a><a class="active" href="kutyak.html">Kutyáink</a><a href="#">Kapcsolat</a></div>
-      <div class="profile"><a class="button primary medium">Bejelentkezés</a></div>
+      <div class="navigation"><a class="active" href=index.html>Kezdőlap</a><a href="kutyak.html">Kutyáink</a><a href="#">Kapcsolat</a></div>
+      <div class="profile"><a href="bejelentkezes.html" class="button primary medium">Bejelentkezés</a></div>
     </nav>
-   
-      <h2>Örökbefogadható kutyáink: </h2>
-      <div class="see-more-dogs__wrapper">
-        <div class="media-card media-card-imgonly">
-          <div class="media-card__image"><img src="https://images.pexels.com/photos/2759564/pexels-photo-2759564.jpeg" alt="https://www.pexels.com/photo/golden-retriever-2759564/"/></div>
-          <div class="media-card__info">
-            <h3>Tappancs</h3>
-          </div>
-          <div class="media-card__cta"><a href="tappancs.html" class="button">Bővebb információ</a></div>
-        </div>
-        <div class="media-card media-card-imgonly">
-          <div class="media-card__image"><img src="https://images.pexels.com/photos/3196887/pexels-photo-3196887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Doggo"/></div>
-          <div class="media-card__info">
-            <h3>Jeges</h3>
-          </div>
-          <div class="media-card__cta"><a href="jeges.html" class="button">Bővebb információ</a></div>
-        </div>
-        <div class="media-card media-card-imgonly">
-          <div class="media-card__image"><img src="https://images.pexels.com/photos/351406/pexels-photo-351406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Doggo"/></div>
-          <div class="media-card__info">
-            <h3>Leyla</h3>
-          </div>
-          <div class="media-card__cta"><a href="leyla.html" class="button">Bővebb információ</a></div>
-        </div>
-        <div class="media-card media-card-imgonly">
-          <div class="media-card__image"><img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Doggo"/></div>
-          <div class="media-card__info">
-            <h3>Hógolyó</h3>
-          </div>
-          <div class="media-card__cta"><a href="hogolyo.html" class="button">Bővebb információ</a></div>
-        </div>
-        <div class="media-card media-card-imgonly">
-          <div class="media-card__image"><img src="https://images.pexels.com/photos/13569296/pexels-photo-13569296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Doggo"/></div>
-          <div class="media-card__info">
-            <h3>Maszlag</h3>
-          </div>
-          <div class="media-card__cta"><a href="maszlag.html" class="button">Bővebb információ</a></div>
-        </div>
+    </section>
+    
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">Bejelentkezési lehetőségek</h2>
+      <div class="vl">
+        <span class="vl-innertext">Vagy</span>
       </div>
 
-    </section>
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Facebook fiókkal
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Twitter fiókkal
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Gogle+ fiókkal
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Felhasználónév" required>
+        <input type="password" name="password" placeholder="Jelszó" required>
+        <input type="submit" value="Bejelentkezés">
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Regisztráció</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Elfelejtette a jelszavát?</a>
+    </div>
+  </div>
+</div>
+    
     <section class="articles"></section>
-  </section>
   <div class="footer">
     <div class="divider">
       <div class="dog__wrapper">
@@ -125,7 +131,7 @@
     </div>
     <ul class="footer__section social-media">
       <li>
-        <p>Kövess Minket: </p>
+        <p>Kövessen Minket: </p>
       </li>
       <li><a href="https://www.facebook.com/" target="_blank"><i class="icon-social-facebook"></i></a></li>
       <li><a href="https://www.instagram.com/" target="_blank"><i class="icon-social-instagram"></i></a></li>
@@ -141,6 +147,8 @@
 </footer>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+      
 
 </body>
 </html>
