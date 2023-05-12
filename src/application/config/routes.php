@@ -55,6 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['bejelentkezes']['get'] = 'Login/index';
-$route['bejelentkezes']['post'] = 'Login/login';
+$route['bejelentkezes']['post'] = 'Login/post';
 
-$route['regisztracio']['post'] = 'Signup/regisztracio';
+$route['kijelentkezes']['get'] = 'Logout/index';

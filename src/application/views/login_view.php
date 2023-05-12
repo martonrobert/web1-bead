@@ -7,7 +7,13 @@ load_view('partials/navigation_view');
         <div class="col-xs-12 col-sm-5">
             <h3>Bejelentkezés</h3>
             <hr />
+            <?php if ($login_success === false and $login_message !== '') : ?>
+            <div class="alert alert-danger">
+                <?php echo $login_message; ?>
+            </div>
+            <?php endif; ?>
             <form action="/bead/index.php/bejelentkezes" method="post">
+                <input type="hidden" name="action" value="login" />
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email cím</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" name="username" placeholder="E-mail cím">
@@ -29,15 +35,16 @@ load_view('partials/navigation_view');
             <hr />     
             <?php if ($signup_success === false and $signup_message !== '') : ?>
             <div class="alert alert-danger">
-                <?php echo $signup['message']; ?>
+                <?php echo $signup_message; ?>
             </div>
             <?php endif; ?>
             <?php if ($signup_success === true and $signup_message !== '') : ?>
             <div class="alert alert-success">
-                <?php echo $signup['message']; ?>
+                <?php echo $signup_message; ?>
             </div>
             <?php endif; ?>            
-            <form action="/bead/index.php/regisztracio" method="post">
+            <form action="/bead/index.php/bejelentkezes" method="post">
+            <input type="hidden" name="action" value="signup" />
                 <div class="form-group">
                     <label for="InputNev">Név</label>
                     <input type="text" class="form-control" id="InputNev" name="nev" placeholder="Név" value="<?php $signup_nev; ?>">
