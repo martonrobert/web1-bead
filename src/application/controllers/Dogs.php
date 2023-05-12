@@ -21,8 +21,9 @@ class Dogs extends CI_Controller {
        $id =  $this->input->get('id');
        $this->load->model('Dog_model', 'dogDao');
        $dog = $this->dogDao->getDog($id);
+       $dogs = $this->dogDao->getDogList();
        $pictures = $this->dogDao->getDogPictures($id);
-       $this->load->view('dog_view', array('dog' => $dog, 'pictures' => $pictures));       
+       $this->load->view('dog_view', array('dog' => $dog, 'pictures' => $pictures, 'dogs' => $dogs));       
     }
 
 }
