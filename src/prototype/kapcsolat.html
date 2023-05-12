@@ -38,18 +38,34 @@
       <div class="navigation"><a href=index.html>Kezdőlap</a><a  href="kutyak.html">Kutyáink</a><a class="active" href="kapcsolat.html">Kapcsolat</a></div>
       <div class="profile"><a href="bejelentkezes.html" class="button primary medium">Bejelentkezés</a></div>
     </nav>
-    <div class="mainkapcs">
-        <h2>Telefonszámunk: </h2>
-        <p>+36 30 111 1111</p>
-        <br>
-        <h2>E-mail: </h2>
-        <p>kecskemet@menhely.com</p>
-     <h1>Itt talál minket: </h1>
-     <span>Kecskemét minta utca. 52</span>
-     <br>
-     <br>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6346.437271525051!2d19.641452326765123!3d46.88742886912916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1683908797918!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    <div class="container">
+        <div style="text-align:center">
+          <h2>Üzenj Nekünk</h2>
+          <p>Miben segíthetünk?</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="https://images.pexels.com/photos/4206711/pexels-photo-4206711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">Vezetéknév</label>
+              <input type="text" id="fname" name="firstname" placeholder="Vezetéknév">
+              <label for="lname">Keresztnév</label>
+              <input type="text" id="lname" name="lastname" placeholder="Keresztnév">
+              <label for="country">Ország</label>
+              <select id="country" name="country">
+                <option value="australia">Magyarország</option>
+                <option value="canada">Szlovákia</option>
+                <option value="usa">Szerbia</option>
+              </select>
+              <label for="subject">Tárgy</label>
+              <textarea id="subject" name="subject" placeholder="Üzenj valamit.." style="height:170px"></textarea>
+              <input type="submit" value="Küldés">
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <section class="articles"></section>
   </section>
