@@ -20,6 +20,12 @@ load_view('partials/navigation_view');
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qx-nhRgV5Y0?autoplay=1&mute=1"></iframe>
   </div>
 
+  <div class="video text-center">
+      <video controls="controls" width="700" height="500" name="Video Name">
+        <source src="img/video.mov">
+      </video>
+    </div>   
+
   <section class="articles">
 
   </section>

@@ -7,14 +7,24 @@ load_view('partials/navigation_view');
   <h1>Üzenetek - <small>Ahol a kutyák gazdira lelnek</small></h1>
   <hr />
 
-  <section style="margin: 16px 8px;">
-    <p>
-    <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-  </section>
 
   <section class="articles">
-  
+    <div class="row">
+        <div class="col-xs-8 col-md-offset-2">
+    <?php foreach($messages as $msg) : ?>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><?php echo $msg['kuldve'] ?> <small><?php echo $msg['felhasznalo_nev'] ?></small></h3>
+            </div>
+            <div class="panel-body">
+            <?php echo $msg['uzenet'] ?>
+            </div>
+        </div>
+
+    <?php endforeach; ?>
+        </div>
+    </div>
   </section>
 </main>
 </div>

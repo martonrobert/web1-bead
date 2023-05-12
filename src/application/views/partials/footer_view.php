@@ -27,7 +27,7 @@
                                     <li>
                                         <p>Rólunk</p>
                                     </li>
-                                    <li> <a href="#">Elérhetőség</a></li>
+                                    <li> <a href="http://www.mentsvar.hu" target="_blank">Elérhetőség (Mentsvár)</a></li>
                                 </ul>
                             </div>
                             <div class="col-xs-12 col-sm-3 text-left">
@@ -35,7 +35,7 @@
                                     <li>
                                         <p>Fogadj örökbe, ne vásárolj!</p>
                                     </li>
-                                    <li><a href="kutyak.html">Kutyáink</a></li>
+                                    <li><a href="<?php echo config_item('base_url') . '/index.php/kutyak' ?>">Kutyáink</a></li>
                                     <li><a href="#">Támogasson Minket</a></li>
                                 </ul>
                             </div>
