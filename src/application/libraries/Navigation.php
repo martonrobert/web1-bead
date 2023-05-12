@@ -17,12 +17,12 @@ class Navigation {
             'home' => array(
                 'title' => 'Kezdőlap',
                 'visibility' => 0,
-                'href' => ''
+                'href' => config_item('base_url')
             ),
             'dogs' => array(
                 'title' => 'Kutyák',
                 'visibility' => 0,
-                'href' => ''                
+                'href' => config_item('base_url') . '/index.php/kutyak'                
             )
         );
         
@@ -30,14 +30,14 @@ class Navigation {
             $this->items['messages'] = array(
                 'title' => 'Üzenetek',
                 'visibility' => 2,
-                'href' => '/uzenetek' 
+                'href' => config_item('base_url') . '/index.php/uzenetek' 
             );
         }
 
         $this->items['contacts'] = array(
             'title' => 'Kapcsolat',
             'visibility' => 0,
-            'href' => ''                
+            'href' => config_item('base_url') . '/index.php/kapcsolat'                
         );
 
         /*
@@ -65,6 +65,10 @@ class Navigation {
 
     public function isUserLoggedIn() {
         return ($this->user ? true : false);
+    }
+
+    public function getUser() {
+        return $this->user;
     }
 
 }

@@ -1,9 +1,28 @@
-        <footer class="navbar-default navbar-fixed-bottom">
-            <div class="container-fluid text-center">        
-                <div class="footer">
+        <footer class="navbar-default navbar-bottom">
+            <div class="container-fluid text-center">
+                <div style="display: grid;">
+
+                    <div class="divider">
+                        <div class="dog__wrapper">
+                            <div class="dog">
+                                <div class="ear ear__left"></div>
+                                <div class="ear ear__right"></div>
+                                <div class="dog-face">
+                                    <div class="patch"></div>
+                                    <div class="eye eye__left"></div>
+                                    <div class="eye eye__right"></div>
+                                    <div class="nose"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+
+                <div class="footer" style="padding: 8px;">
                     <div class="divider">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4">
+                            <div class="col-xs-12 col-sm-3 text-left">
                                 <ul class="footer__section about-list">
                                     <li>
                                         <p>Rólunk</p>
@@ -11,7 +30,7 @@
                                     <li> <a href="#">Elérhetőség</a></li>
                                 </ul>
                             </div>
-                            <div class="col-xs-12 col-sm-4">
+                            <div class="col-xs-12 col-sm-3 text-left">
                                 <ul class="footer__section adopt-list">
                                     <li>
                                         <p>Fogadj örökbe, ne vásárolj!</p>
@@ -21,6 +40,21 @@
                                 </ul>
                             </div>
                             <div class="col-xs-12 col-sm-4">
+                                <div class="subscription">
+                                    <form>                                        
+                                        <div class="text-center">
+                                            <h3>Íratkozzon fel hírlevelünkre!</h3>
+                                            <p>Minden újonnan bekerülő kutyánkról küldünk értesítést.</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" placeholder="E-mail cím"/>
+                                        </div>
+                                        <button class="btn btn-primary">Feliratkozom</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-1">
                                 <ul class="footer__section social-media">
                                     <li>
                                         <p>Kövessen Minket: </p>
@@ -44,16 +78,7 @@
                             <a href="#">Terms of Use</a><a href="#">Privacy Policy</a>
                         </div>
                     </div>
-                </div>                
-                <div class="explanation">Part of the <a href="https://codepen.io/collection/DQvYpQ" target="_blank">CSS Grid
-                        collection</a> and the <a href="https://codepen.io/collection/XJyNPm/" target="_blank">Style Guide
-                        collection</a>.
-                </div>
-                <div class="social"><a href="https://twitter.com/meowlivia_" target="_blank"><i
-                        class="icon-social-twitter icons"></i></a><a href="https://github.com/oliviale" target="_blank"><i
-                        class="icon-social-github icons"></i></a><a href="https://dribbble.com/oliviale" target="_blank"><i
-                        class="icon-social-dribbble icons"></i></a>
-                </div>            
+                </div>           
             </div>
         </footer>
 

@@ -1041,7 +1041,8 @@ nav {
   border-radius: 10px;
   overflow: hidden;
   min-width: 250px;
-  width: 100%;
+  max-width: 250px;
+  /*width: 100%;*/
   grid: 400px 0px/100%;
 }
 .media-card-imgonly:hover {
@@ -1202,7 +1203,7 @@ nav {
   padding: 8px 18px;
   border-radius: 10px;
   text-align: left;
-  background: var(--secondaryShade1);
+  background: #ede7f6;
 }
 .dog-manythings__location h5 {
   color: var(--secondaryShade5);
@@ -1293,6 +1294,7 @@ nav {
 }
 
 /*MORE OVERALL LAYOUT*/
+/*
 body {
   display: grid;
   grid-auto-flow: dense;
@@ -1302,10 +1304,11 @@ body {
   align-items: center;
   text-align: center;
 }
+
 body main {
   grid-row: 1;
   grid-column: 1/-1;
-}
+}*/
 
 footer {
   display: grid;

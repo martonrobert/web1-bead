@@ -2,6 +2,7 @@
 
 $ci = get_instance();
 $navItems = $ci->nav->getNavigationItems();
+$user = $ci->nav->getUser();
 ?>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -22,15 +23,12 @@ $navItems = $ci->nav->getNavigationItems();
                 <?php endforeach; ?>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <?php if ($ci->nav->isUserLoggedIn()) : ?>
-                        <a href="<?php echo config_item('base_url'); ?>/index.php/kijelentkezes" class="button primary medium">Kijelentkezes</a>
-                    <?php else : ?>
-                        <a href="<?php echo config_item('base_url'); ?>/index.php/bejelentkezes" class="button primary medium">Bejelentkezés</a>
-                    <?php endif; ?>
-                </li>
-            </ul>
+            <?php if ($ci->nav->isUserLoggedIn()) : ?>
+                <p class="navbar-text navbar-right">Belépve mint <?php echo $user->nev ?> <a href="<?php echo config_item('base_url'); ?>/index.php/kijelentkezes" class="navbar-link">Kilépés  </a></p>
+            <?php else : ?>
+                <p class="navbar-text navbar-right"><a href="<?php echo config_item('base_url'); ?>/index.php/bejelentkezes" class="navbar-link">Belépés  </a></p>
+            <?php endif; ?>
+
         </div><!-- /.navbar-collapse -->
     </div>
 </nav>

@@ -58,3 +58,7 @@ $route['bejelentkezes']['get'] = 'Login/index';
 $route['bejelentkezes']['post'] = 'Login/post';
 
 $route['kijelentkezes']['get'] = 'Logout/index';
+
+$route['kutyak']['get'] = 'Dogs/index';
+$route['kutya']['get'] = 'Dogs/dog';
+$route['uzenetek']['get'] = 'Messages/index';

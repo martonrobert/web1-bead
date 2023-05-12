@@ -4,11 +4,8 @@ load_view('partials/navigation_view');
 ?>
 <div class="container-fluid">
 <main>
-  <h1>KecskemetMenhely - <small>Ahol a kutyák gazdira lelnek</small></h1>
+  <h1>Üzenetek - <small>Ahol a kutyák gazdira lelnek</small></h1>
   <hr />
-  <div class="text-center">
-    <img src="<?php echo config_item('base_url'); ?>/img/header.png" height="400" alt="bevezető kép"/>
-  </div>
 
   <section style="margin: 16px 8px;">
     <p>
@@ -16,12 +13,8 @@ load_view('partials/navigation_view');
     </p>
   </section>
 
-  <div class="video text-center">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/qx-nhRgV5Y0?autoplay=1&mute=1"></iframe>
-  </div>
-
   <section class="articles">
-
+  
   </section>
 </main>
 </div>
