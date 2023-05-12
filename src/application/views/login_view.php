@@ -12,7 +12,7 @@ load_view('partials/navigation_view');
                 <?php echo $login_message; ?>
             </div>
             <?php endif; ?>
-            <form action="/bead/index.php/bejelentkezes" method="post">
+            <form action="<?php echo config_item('base_url'); ?>/index.php/bejelentkezes" method="post">
                 <input type="hidden" name="action" value="login" />
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email cím</label>
@@ -43,7 +43,7 @@ load_view('partials/navigation_view');
                 <?php echo $signup_message; ?>
             </div>
             <?php endif; ?>            
-            <form action="/bead/index.php/bejelentkezes" method="post">
+            <form action="<?php echo config_item('base_url'); ?>/index.php/bejelentkezes" method="post">
             <input type="hidden" name="action" value="signup" />
                 <div class="form-group">
                     <label for="InputNev">Név</label>

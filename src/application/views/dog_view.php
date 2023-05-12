@@ -63,7 +63,7 @@ $kepId = 1;
           </div>
           <div class="dog-manythings__location__icon"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/icon-googlemap.png" alt="Location Icon"/></div></a>
       </section>
-      <section class="dog-ask-about"><a class="button">Kérdezzen bátran!</a></section>
+      <section class="dog-ask-about"><a class="button" href="<?php echo config_item('base_url'); ?>/index.php/kapcsolat?dog=<?php echo $dog['id'] ?>">Kérdezzen bátran!</a></section>
     </div>
 
 <?php

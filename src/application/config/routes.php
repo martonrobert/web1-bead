@@ -62,3 +62,6 @@ $route['kijelentkezes']['get'] = 'Logout/index';
 $route['kutyak']['get'] = 'Dogs/index';
 $route['kutya']['get'] = 'Dogs/dog';
 $route['uzenetek']['get'] = 'Messages/index';
+
+$route['kapcsolat']['get'] = 'Contact/index';
+$route['kapcsolat']['post'] = 'Contact/post';
